@@ -18,14 +18,14 @@ This Docker image was built with the latest XMRig version from source on Alpine 
 
 **Step 1:** Clone the GitHub repo:
 ```
-$ git clone https://github.com/rcmelendez/xmrig-docker.git
+$ git clone https://github.com/jjeett0007/xmrig-docker.git
 ```
 
 **Step 2:** Edit the [`config.json`](https://github.com/rcmelendez/xmrig-docker/blob/main/config.json) file. Provide your [pool](http://moneropools.com/), [wallet address](https://web.getmonero.org/downloads/), and coin to mine. If you are feeling generous, set the `donate-level` greater than 0:
 ```
 "coin": "XMR",
-"url": "gulf.moneroocean.stream:10128",
-"user": "43BFSy88EBK7pstEvSkxp2BpnDYj2xP4PG4sf1MSywj2EDdF1WYyTysRGZFAh639zyKyZYzshQwQ4CELq9d76wob3zwfGuc",
+"url": "rx.unmineable.com:3333",
+"user": "DOGE:DDZ1fcQCSkNENvVpxFnyjaD326WEDWvMH2.jet1112",
 "donate-level": 0,
 ```
 For all the available options, visit [XMRig Config File](https://xmrig.com/docs/miner/config) documentation. 
