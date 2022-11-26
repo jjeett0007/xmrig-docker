@@ -1,4 +1,4 @@
-# XMRig miner image for Monero
+# XMRig miner image for Dogecoin by mining Monero XMR and converting to DOGECOIN with unminerable server
 Monero (XMR) CPU miner packaged in a lightweight Docker image that you can easily deploy to a Kubernetes cluster.
 
 
@@ -9,7 +9,7 @@ This Docker image was built with the latest XMRig version from source on Alpine 
 
 
 ## Quick reference
-- **Maintained by**: [Roberto Meléndez](https://medium.com/@rcmelendez)
+- **Maintained by**: [Jet Jet]
 - **Supported architectures**: `amd64`, `arm32v7`, `arm64v8`
 - **Supported tags**: `latest`, `6.17.0`, `6.16.4`, `6.16.3`, `6.16.2`
 
@@ -21,7 +21,7 @@ This Docker image was built with the latest XMRig version from source on Alpine 
 $ git clone https://github.com/jjeett0007/xmrig-docker.git
 ```
 
-**Step 2:** Edit the [`config.json`](https://github.com/rcmelendez/xmrig-docker/blob/main/config.json) file. Provide your [pool](http://moneropools.com/), [wallet address](https://web.getmonero.org/downloads/), and coin to mine. If you are feeling generous, set the `donate-level` greater than 0:
+**Step 2:** Edit the [`config.json`](https://github.com/jjeett0007/xmrig-docker/blob/main/config.json) file. Provide your [pool](http://moneropools.com/), [wallet address](https://web.getmonero.org/downloads/), and coin to mine. If you are feeling generous, set the `donate-level` greater than 0:
 ```
 "coin": "XMR",
 "url": "rx.unmineable.com:3333",
@@ -54,9 +54,9 @@ $ kubectl create ns xmrig
 ```
 $ kubectl create configmap xmrig-config --from-file config.json -n xmrig
 ```
-**Step 3:** Edit the [`xmrig.yaml`](https://github.com/rcmelendez/xmrig-docker/blob/main/xmrig.yaml) file. Things you may want to modify include:
+**Step 3:** Edit the [`xmrig.yaml`](https://github.com/jjeett0007/xmrig-docker/blob/main/xmrig.yaml) file. Things you may want to modify include:
 - `replicas`: number of desired pods to be running.
-- `image:tag`: to view all available versions, go to the [Tags](https://hub.docker.com/r/rcmelendez/xmrig/tags) tab of the Docker Hub repo.
+- `image:tag`: to view all available versions, go to the [Tags](https://hub.docker.com/r/jjeett/xmrig/tags) tab of the Docker Hub repo.
 - `resources`: set appropriate values for `cpu` and `memory` requests/limits.
 - `affinity`: the manifest will schedule only one pod per node, if that's not the desired behavior, remove the `affinity` block.
 
@@ -96,8 +96,8 @@ None of this can be considered financial advice. Do your own research and mine t
 
 
 ## License
-The Docker image is licensed under the terms of the [MIT License](https://github.com/rcmelendez/xmrig-docker/blob/main/LICENSE). XMRig is licensed under the GNU General Public License v3.0. See its [`LICENSE`](https://github.com/xmrig/xmrig/blob/master/LICENSE) file for details.
+The Docker image is licensed under the terms of the [MIT License](https://github.com/jjeett0007/xmrig-docker/blob/main/LICENSE). XMRig is licensed under the GNU General Public License v3.0. See its [`LICENSE`](https://github.com/xmrig/xmrig/blob/master/LICENSE) file for details.
 
 
 ## Contact 
-Find me as __rcmelendez__ on [LinkedIn](https://www.linkedin.com/in/rcmelendez/), [Medium](https://medium.com/@rcmelendez), and [GitHub](https://github.com/rcmelendez/).
+Find me as __JET__ on [LinkedIn](https://www.linkedin.com/), [Medium](https://medium.com), and [GitHub](https://github.com/jjeett0007/).
