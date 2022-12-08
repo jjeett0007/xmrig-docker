@@ -22,6 +22,16 @@ $ git clone https://github.com/jjeett0007/xmrig-docker.git
 ```
 
 **Step 2:** Edit the [`config.json`](https://github.com/jjeett0007/xmrig-docker/blob/main/config.json) file. Provide your [pool](http://moneropools.com/), [wallet address](https://web.getmonero.org/downloads/), and coin to mine. If you are feeling generous, set the `donate-level` greater than 0:
+
+```
+"edit [`config.json`](",
+"scroll downto :: url and add your mining server with port example=": ["`rx.unmineable.com:3333`"],
+"add wallet in user": example ["DOGE:DDZ1fcQCSkNENvVpxFnyjaD326WEDWvMH2.jet1112"],
+"donate-level": 0,
+"`you can copy example above",
+```
+
+
 ```
 "coin": "XMR",
 "url": "rx.unmineable.com:3333",
